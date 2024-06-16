@@ -15,28 +15,28 @@ const config: Config = {
       },
     },
     fontSize: {
-      heading: [
+      "heading-primary": [
         "64px",
         {
           lineHeight: "1.3em",
           fontWeight: "400",
         },
       ],
-      "heading-bold": [
+      "heading-primary-bold": [
         "64px",
         {
           lineHeight: "1.3em",
           fontWeight: "700",
         },
       ],
-      heading1: [
+      "heading-secondary": [
         "38px",
         {
           lineHeight: "1.3em",
           fontWeight: "400",
         },
       ],
-      "heading1-bold": [
+      "heading-secondary-bold": [
         "38px",
         {
           lineHeight: "1.3em",
@@ -71,7 +71,6 @@ const config: Config = {
           fontWeight: "700",
         },
       ],
-
       paragraph: [
         "16px",
         {
