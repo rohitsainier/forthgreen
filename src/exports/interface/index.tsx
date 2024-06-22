@@ -1,3 +1,4 @@
-import { navbarItems } from "@/interface";
+import { navbarItems, CardProps, CardType, HeroInterface } from "@/interface";
 
-export { navbarItems };
+export { navbarItems, CardType };
+export type { CardProps, HeroInterface };
