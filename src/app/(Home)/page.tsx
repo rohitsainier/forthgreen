@@ -1,6 +1,13 @@
+"use client";
 import Image from "next/image";
-import { CardType, Card } from "@/components";
+import { CardType, Card, Navbar } from "@/components";
+import { useState } from "react";
 
 export default function Home() {
-  return <div>Body</div>;
+  const [count, setCount] = useState("");
+  return (
+    <div>
+      <Navbar></Navbar>
+    </div>
+  );
 }
