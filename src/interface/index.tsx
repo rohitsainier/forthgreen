@@ -1,11 +1,11 @@
 // Define the NavbarInterface
-export interface NavbarInterface {
+interface NavbarInterface {
   title: string;
   link: string;
 }
 
 // Create an array of objects conforming to the NavbarInterface
-export const navbarItems: NavbarInterface[] = [
+const navbarItems: NavbarInterface[] = [
   { title: "Women", link: "/" },
   { title: "Men", link: "/" },
   { title: "Beauty", link: "/" },
@@ -15,3 +15,28 @@ export const navbarItems: NavbarInterface[] = [
   { title: "Health", link: "/" },
   { title: "Miscellaneous", link: "/" },
 ];
+
+interface CardProps {
+  url?: string;
+  title?: string;
+  description?: string;
+  category?: string;
+  price?: number;
+  type: CardType;
+}
+
+enum CardType {
+  brand = "brand",
+  product = "product",
+}
+
+interface HeroInterface {
+  picture: string;
+  title: string;
+  desc: string;
+  buttonTitle: string;
+  flip: boolean;
+}
+
+export { navbarItems, CardType };
+export type { CardProps, NavbarInterface, HeroInterface };

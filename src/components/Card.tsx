@@ -1,18 +1,13 @@
-interface CardProps {
-  url?: string;
-  title?: string;
-  description?: string;
-  category?: string;
-  price?: number;
-  type: CardType;
-}
+import { CardProps, CardType } from "@/exports/interface";
 
-enum CardType {
-  brand = "brand",
-  product = "product",
-}
-
-function Card({ url, title, description, category, price, type }: CardProps) {
+export function Card({
+  url,
+  title,
+  description,
+  category,
+  price,
+  type,
+}: CardProps) {
   //Note: if type if more then 2 we should use switch
   if (type === CardType.brand) {
     return (
@@ -39,5 +34,3 @@ function Card({ url, title, description, category, price, type }: CardProps) {
     );
   }
 }
-
-export { Card, CardType };
