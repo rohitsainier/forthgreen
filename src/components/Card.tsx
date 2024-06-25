@@ -12,7 +12,7 @@ export function Card({
   if (type === CardType.brand) {
     return (
       <div className="flex flex-col gap-6">
-        <img src={url} alt={title} />
+        <img src={url} alt={title} className="rounded-3xl" />
         <div className="flex flex-col gap-4 text-left">
           <h3 className="text-heading3 "> {title}</h3>
           <p className="text-paragraph text-gray-700">{description}</p>
@@ -22,7 +22,7 @@ export function Card({
   } else if (type === CardType.product) {
     return (
       <div className="flex flex-col gap-4">
-        <img src={url} alt={title} />
+        <img src={url} alt={title} className="rounded-3xl" />
         <div className="flex flex-col text-left">
           <h1 className="text-heading3"> {title}</h1>
           <p className="text-paragraph text-gray-400 hover:text-black">

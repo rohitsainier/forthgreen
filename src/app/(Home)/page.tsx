@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
-import { Navbar, HeroSection } from "@/components";
-import { useState } from "react";
+import { Navbar, HeroSection, Brands } from "@/components";
 
 export default function Home() {
   return (
@@ -21,6 +19,11 @@ export default function Home() {
         buttonTitle="Coming soon"
         flip={true}
       />
+      <h1 className="font-medium text-heading-secondary text-left">
+        Discover new brands
+      </h1>
+      <p className="text-left text-gray-500 mt-4">Vegan brands worth knowing</p>
+      <Brands />
     </div>
   );
 }
