@@ -63,5 +63,12 @@ interface HeroInterface {
   flip: boolean;
 }
 
+interface ProductCardInterface {
+  image: string;
+  title: string;
+  category: string;
+  price: string;
+}
+
 export { navbarItems, brandItems, CardType };
-export type { CardProps, NavbarInterface, HeroInterface };
+export type { CardProps, NavbarInterface, HeroInterface, ProductCardInterface };

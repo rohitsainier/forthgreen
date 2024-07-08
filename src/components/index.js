@@ -5,5 +5,15 @@ import Button from "./Button";
 import { Card } from "./Card";
 import { HeroSection } from "./HeroSection";
 import Brands from "./Brands";
+import ProductCard from "./ProductCard";
 
-export { Header, Navbar, Footer, Button, Card, HeroSection, Brands };
+export {
+  Header,
+  Navbar,
+  Footer,
+  Button,
+  Card,
+  HeroSection,
+  Brands,
+  ProductCard,
+};
