@@ -7,11 +7,83 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    fontSize: {
+      "heading-primary": [
+        "64px",
+        {
+          lineHeight: "1.3em",
+          fontWeight: "400",
+        },
+      ],
+      "heading-primary-bold": [
+        "64px",
+        {
+          lineHeight: "1.3em",
+          fontWeight: "700",
+        },
+      ],
+      "heading-secondary": [
+        "38px",
+        {
+          lineHeight: "1.3em",
+          fontWeight: "400",
+        },
+      ],
+      "heading-secondary-bold": [
+        "38px",
+        {
+          lineHeight: "1.3em",
+          fontWeight: "700",
+        },
+      ],
+      heading2: [
+        "28px",
+        {
+          lineHeight: "1.3em",
+          fontWeight: "400",
+        },
+      ],
+      "heading2-bold": [
+        "28px",
+        {
+          lineHeight: "1.3em",
+          fontWeight: "700",
+        },
+      ],
+      heading3: [
+        "21px",
+        {
+          lineHeight: "1.3em",
+          fontWeight: "400",
+        },
+      ],
+      "heading3-bold": [
+        "21px",
+        {
+          lineHeight: "1.3em",
+          fontWeight: "700",
+        },
+      ],
+      paragraph: [
+        "16px",
+        {
+          lineHeight: "1.5em",
+          fontWeight: "350px",
+        },
+      ],
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        light: "#FFFFFF",
+        dark1: "#000000",
+        dark2: "#3E4B4D",
       },
     },
   },
